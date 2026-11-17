@@ -39,7 +39,7 @@ public class Stock {
 
     public void ajouterArticle(String nom, double prix, long quantite) {
         articleList.add(new Element(nom, prix, quantite));
-    
+    }
     public Element trouverArticle(String reference) {
         for (Element e : articleList) {
             if (e.equals(reference)) {
