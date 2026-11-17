@@ -39,9 +39,7 @@ public class Stock {
 
     public void ajouterArticle(String nom, double prix, long quantite) {
         articleList.add(new Element(nom, prix, quantite));
-    }
-
-    /** Retourne l'élément ayant cette référence, ou null s'il n'existe pas. */
+    
     public Element trouverArticle(String reference) {
         for (Element e : articleList) {
             if (e.equals(reference)) {
