@@ -1,7 +1,7 @@
 package techstore;
 
 public class Article {
-    private static int compteur = 0; // sert à générer des identifiants uniques
+    private static int compteur = 0; 
 
     private int id;
     private String nom;
@@ -16,10 +16,7 @@ public class Article {
         genererReference();
     }
 
-    /**
-     * Référence = lettres du nom (espaces ignorés) dont l'indice est divisible
-     * par 5 (0, 5, 10, ...), suivies de l'identifiant de l'article.
-     */
+    
     private void genererReference() {
         String sansEspaces = nom.replace(" ", "");
         StringBuilder sb = new StringBuilder();
@@ -60,7 +57,7 @@ public class Article {
     }
 
     public void modifier(String nom) {
-        setNom(nom); // met à jour aussi la référence
+        setNom(nom); 
     }
 
     public void modifier(String nom, double prix) {
