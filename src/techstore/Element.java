@@ -47,7 +47,7 @@ public class Element {
         this.quantite = quantite;
     }
 
-    /** Augmente la quantité. Retourne false si la valeur est invalide (<= 0). */
+    
     public boolean incrementerQuantite(long q) {
         if (q <= 0) {
             return false;
@@ -56,7 +56,7 @@ public class Element {
         return true;
     }
 
-    /** Diminue la quantité. Retourne false si q <= 0 ou q > quantité disponible. */
+    
     public boolean decrementerQuantite(long q) {
         if (q <= 0 || q > this.quantite) {
             return false;
@@ -73,12 +73,12 @@ public class Element {
         this.quantite = quantite;
     }
 
-    /** Vrai si la référence de l'article correspond à la chaîne fournie. */
+    
     public boolean equals(String reference) {
         return article.getReference().equals(reference);
     }
 
-    /** Deux articles sont identiques s'ils ont la même référence. */
+    
     public boolean equals(Article autre) {
         return autre != null && article.getReference().equals(autre.getReference());
     }
