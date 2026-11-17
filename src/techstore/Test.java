@@ -10,7 +10,7 @@ public class Test {
         partie2();
     }
 
-    // ---------- Partie 1 : classes Adresse et Personne ----------
+
     private static void partie1() {
         System.out.println("La création des personnes commence :");
         Adresse a1 = new Adresse("Monastir", 5000);
@@ -34,7 +34,7 @@ public class Test {
         System.out.println();
     }
 
-    // ---------- Partie 2 : gestion du stock ----------
+
     private static long lireLong(Scanner sc, String message) {
         while (true) {
             System.out.print(message);
